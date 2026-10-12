@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 30
-  productGUID: 00000000000000000000000000000000
+  productGUID: c51c8b72788b87e48baa800b9b14b175
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -760,13 +760,13 @@ PlayerSettings:
   qnxGraphicConfPath: 
   apiCompatibilityLevel: 6
   captureStartupLogs: {}
-  activeInputHandler: 0
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
   enableDirectStorage: 0
   cloudProjectId: bc48b8c6-e97b-476b-a2b5-5e203bbda318
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
+  projectName: laba 2
   organizationId: savvamerkulov08
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1
