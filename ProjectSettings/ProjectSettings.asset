@@ -4,7 +4,11 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 30
+<<<<<<< HEAD
   productGUID: 8c07347a01e1d024da29d22239d20538
+=======
+  productGUID: c51c8b72788b87e48baa800b9b14b175
+>>>>>>> feature/level-design
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -766,7 +770,7 @@ PlayerSettings:
   cloudProjectId: bc48b8c6-e97b-476b-a2b5-5e203bbda318
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
+  projectName: laba 2
   organizationId: savvamerkulov08
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1
