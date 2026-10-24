@@ -36,7 +36,6 @@ jobs:
 
       - uses: game-ci/unity-test-runner@v4
         id: tests
-        continue-on-error: true
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
@@ -52,8 +51,7 @@ jobs:
         if: always()
         with:
           name: Test results for ${{ matrix.testMode }}
-          path: ${{ matrix.testMode }}-artifacts
-          if-no-files-found: ignore
+          path: ${{ steps.tests.outputs.artifactsPath }}
 
   buildForAllDesiredPlatforms:
     needs: testProject
@@ -78,7 +76,6 @@ jobs:
           restore-keys: Library-
 
       - uses: game-ci/unity-builder@v4
-        continue-on-error: true
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
@@ -90,4 +87,3 @@ jobs:
         with:
           name: Build-${{ matrix.targetPlatform }}
           path: build/${{ matrix.targetPlatform }}
-          if-no-files-found: ignore
